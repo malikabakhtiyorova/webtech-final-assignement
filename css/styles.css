@@ -1387,3 +1387,86 @@ bank-animation {
   padding: 16px;
   transition: color 0.3s ease;
 }
+
+.switch {
+  display: flex;
+  height: 36px;
+  position: relative;
+  width: 70px;
+  border-radius: 15px;
+  border-radius: 34px !important;
+  /* border: 2px solid black; */
+}
+.switch input {
+  display:none;
+}
+
+.slider {
+  border-radius: 15px;
+  background-color: rgb(115, 119, 119);
+  border:1px solid #000;
+  border: 2px solid black;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: .4s;
+  border-radius: 34px !important;
+}
+
+.slider:before {
+  border-radius: 15px;
+  background-color: #333;
+  border:1px solid #000;
+  border: 2px solid black;
+  bottom: 3px;
+  content: "";
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: .4s;
+  width: 26px;
+  z-index:81;
+  border-radius: 34px !important;
+}
+
+input:checked + .slider {
+  border-radius: 15px;
+  background-color: #101211;
+  border-radius: 34px !important;
+  border: 2px solid black;
+}
+
+input:checked + .slider:before {
+  border: 2px solid black;
+  border-radius: 15px;
+  transform: translateX(34px);
+  border-color:#CFCFCF;
+  background-color:rgb(184, 184, 184);
+  border-radius: 34px !important;
+}
+
+.slider.round {
+  border-radius: 34px !important;
+  border: 2px solid #000000;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+  border: 2px solid vlack;
+}
+
+.toggle-moon, .toggle-sun {
+  width:50%;
+  text-align:center;
+  padding:0.25em;
+  position:relative;
+  z-index:40;
+}
+
+
+
+
+
