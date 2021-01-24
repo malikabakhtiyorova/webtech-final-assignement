@@ -1458,6 +1458,10 @@ input:checked + .slider:before {
   border: 2px solid vlack;
 }
 
+.site-logo em {
+  font-size: 30px;
+}
+
 .toggle-moon, .toggle-sun {
   width:50%;
   text-align:center;
